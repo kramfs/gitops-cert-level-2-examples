@@ -10,9 +10,14 @@ resources:
 components:
   - ../../variants/non-prod
 
-patchesStrategicMerge:
-- deployment.yml
-- version.yml
-- settings.yml
-- service.yml
+# patchesStrategicMerge:
+# - deployment.yml
+# - version.yml
+# - settings.yml
+# - service.yml
 
+patches:
+- path: deployment.yml
+- path: version.yml
+- path: settings.yml
+- path: service.yml
